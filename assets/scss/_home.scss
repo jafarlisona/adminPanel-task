@@ -1,0 +1,128 @@
+nav {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    h1 {
+        color: #011C40;
+        font-weight: 600;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+
+    a {
+        color: #011C40;
+        border: 2px solid #011C40;
+        font-weight: 600;
+        border-radius: 10px;
+        padding: 13px 35px;
+        position: absolute;
+        right: 20px;
+        top: 10.5px;
+        cursor: pointer;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 90px;
+    row-gap: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .userCard {
+        background-color: white;
+        padding: 25px 20px 0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+        overflow: hidden;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        .userImage {
+            user-select: none;
+
+            img {
+                border-radius: 50%;
+                height: 135px;
+                width: 135px;
+                object-fit: cover;
+            }
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #F25430;
+        }
+
+        .userContent {
+            margin: 10px 0;
+            line-height: 25px;
+
+            .userName {
+                color: #bbc1c8;
+                font-weight: 300;
+
+                span {
+                    color: #011C40;
+                    font-weight: 500;
+                }
+            }
+
+            p {
+                color: #bbc1c8;
+                font-weight: 300;
+
+                span {
+                    color: #011C40;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .activity {
+            display: flex;
+
+            .followers {
+                background-color: #F25430;
+                text-align: center;
+                padding: 15px 30px 15px 100px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: white;
+                font-weight: 700;
+                font-size: 17px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .likes {
+                background-color: #F25430;
+                text-align: center;
+                padding: 15px 100px 15px 30px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: white;
+                font-weight: 700;
+                font-size: 17px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

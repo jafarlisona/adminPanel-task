@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B8CAD9;
+}
+
+.nav-colored {
+  background-color: rgba(86, 115, 140, 0.8196078431);
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+.h1-colored {
+  color: white;
+}
+
+.a-colored {
+  color: white;
+  border: 2px solid white;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav h1 {
+  color: #011C40;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+nav a {
+  color: #011C40;
+  border: 2px solid #011C40;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 13px 35px;
+  position: absolute;
+  right: 20px;
+  top: 10.5px;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  column-gap: 90px;
+  row-gap: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container .userCard {
+  background-color: white;
+  padding: 25px 20px 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.container .userCard .userImage {
+  user-select: none;
+}
+.container .userCard .userImage img {
+  border-radius: 50%;
+  height: 135px;
+  width: 135px;
+  object-fit: cover;
+}
+.container .userCard .title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #F25430;
+}
+.container .userCard .userContent {
+  margin: 10px 0;
+  line-height: 25px;
+}
+.container .userCard .userContent .userName {
+  color: #bbc1c8;
+  font-weight: 300;
+}
+.container .userCard .userContent .userName span {
+  color: #011C40;
+  font-weight: 500;
+}
+.container .userCard .userContent p {
+  color: #bbc1c8;
+  font-weight: 300;
+}
+.container .userCard .userContent p span {
+  color: #011C40;
+  font-weight: 500;
+}
+.container .userCard .activity {
+  display: flex;
+}
+.container .userCard .activity .followers {
+  background-color: #F25430;
+  text-align: center;
+  padding: 15px 30px 15px 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
+.container .userCard .activity .followers:hover {
+  opacity: 0.9;
+}
+.container .userCard .activity .likes {
+  background-color: #F25430;
+  text-align: center;
+  padding: 15px 100px 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+}
+.container .userCard .activity .likes:hover {
+  opacity: 0.9;
+}
+
+.adminHeader {
+  width: 100%;
+}
+.adminHeader h1 {
+  color: #011C40;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-right: 50px;
+}
+.adminHeader .back {
+  margin-top: 22px;
+  margin-left: 50px;
+  border: none;
+  background-color: transparent;
+  float: left;
+}
+.adminHeader .back i {
+  color: #011C40;
+  font-size: 36px;
+}
+
+table {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin-bottom: 70px;
+}
+table .tableHeading {
+  background-color: #56738C;
+  height: 70px;
+}
+table .tableHeading th {
+  text-align: center;
+  color: white;
+}
+table .tableHeading th .add {
+  color: white;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+table .tableHeading th .add:hover {
+  color: #011C40;
+}
+table .tableUsers td {
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #011C40;
+  border-top: 1px solid #56738C;
+}
+table .tableUsers .adminId {
+  color: #F25430;
+}
+table .tableUsers .adminImg img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+table .tableUsers .adminDetail button {
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px 40px;
+  border: 2px solid #F25430;
+  color: #F25430;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+}
+table .tableUsers .adminDetail button:hover {
+  color: white;
+  background-color: #F25430;
+}
+
+section {
+  background-color: white;
+  height: 600px;
+  border-radius: 20px;
+  width: 970px;
+  margin: 70px;
+  padding: 30px 50px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+section .back {
+  border: none;
+  background-color: transparent;
+}
+section .back i {
+  color: #F25430;
+  font-size: 35px;
+}
+section .detailBox {
+  display: flex;
+  margin: 0px 100px;
+}
+section .detailBox .detailImg {
+  margin-top: 40px;
+}
+section .detailBox .detailImg img {
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+}
+section .detailBox .detailContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+section .detailBox .detailContent p {
+  white-space: pre;
+  color: #bbc1c8;
+  font-weight: 600;
+  line-height: 40px;
+}
+section .detailBox .detailContent p span {
+  display: inline-block;
+  color: #011C40;
+  font-size: 19px;
+}
+section .buttons {
+  position: absolute;
+  right: 50px;
+  bottom: 30px;
+}
+section .buttons button {
+  background-color: #F25430;
+  border: none;
+  border-radius: 3px;
+  margin-right: 15px;
+  height: 45px;
+  width: 45px;
+}
+section .buttons button:hover {
+  background-color: #56738C;
+}
+section .buttons button i {
+  color: white;
+  font-size: 20px;
+}
+
+.addContainer {
+  background-color: white;
+  height: 600px;
+  border-radius: 20px;
+  width: 500px;
+  margin: 70px;
+  padding: 30px 50px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.addContainer .back {
+  border: none;
+  background-color: transparent;
+}
+.addContainer .back i {
+  color: #F25430;
+  font-size: 35px;
+}
+.addContainer .addContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 465px;
+}
+.addContainer .addContent div {
+  width: 270px;
+}
+.addContainer .addContent div label {
+  white-space: pre;
+  color: #bbc1c8;
+  font-weight: 600;
+  line-height: 40px;
+}
+.addContainer .addContent div input {
+  margin-top: 10px;
+  float: right;
+  display: inline-block;
+  color: #011C40;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  width: 170px;
+  border: none;
+  border-bottom: 1px solid #bbc1c8;
+}
+.addContainer .addContent div select {
+  color: #011C40;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #bbc1c8;
+  outline: none;
+  cursor: pointer;
+  width: 170px;
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.addContainer .save {
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 7px 30px;
+  border: 2px solid #F25430;
+  color: #F25430;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  float: right;
+}
+.addContainer .save:hover {
+  color: white;
+  background-color: #F25430;
+}
+
+.updateContainer {
+  background-color: white;
+  height: 600px;
+  border-radius: 20px;
+  width: 500px;
+  margin: 70px;
+  padding: 30px 50px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.updateContainer .back {
+  border: none;
+  background-color: transparent;
+}
+.updateContainer .back i {
+  color: #F25430;
+  font-size: 35px;
+}
+.updateContainer .updateContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 465px;
+}
+.updateContainer .updateContent div {
+  width: 270px;
+}
+.updateContainer .updateContent div label {
+  white-space: pre;
+  color: #bbc1c8;
+  font-weight: 600;
+  line-height: 40px;
+}
+.updateContainer .updateContent div input {
+  margin-top: 10px;
+  float: right;
+  display: inline-block;
+  color: #011C40;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  width: 170px;
+  border: none;
+  border-bottom: 1px solid #bbc1c8;
+}
+.updateContainer .updateContent div select {
+  color: #011C40;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #bbc1c8;
+  outline: none;
+  cursor: pointer;
+  width: 170px;
+  float: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.updateContainer #updateBtn {
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 7px 30px;
+  border: 2px solid #F25430;
+  color: #F25430;
+  background-color: transparent;
+  user-select: none;
+  cursor: pointer;
+  float: right;
+}
+.updateContainer #updateBtn:hover {
+  color: white;
+  background-color: #F25430;
+}/*# sourceMappingURL=style.css.map */

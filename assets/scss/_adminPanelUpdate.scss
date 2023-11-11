@@ -1,0 +1,79 @@
+.updateContainer {
+    background-color: white;
+    height: 600px;
+    border-radius: 20px;
+    width: 500px;
+    margin: 70px;
+    padding: 30px 50px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    .back {
+        border: none;
+        background-color: transparent;
+        i {
+            color: #F25430;
+            font-size: 35px;
+        }
+    }
+
+    .updateContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 465px;
+        div {
+            width: 270px;
+            label {
+                white-space: pre;
+                color: #bbc1c8;
+                font-weight: 600;
+                line-height: 40px;
+            }
+            
+            input {
+                margin-top: 10px;
+                float: right;
+                display: inline-block;
+                color: #011C40;
+                font-size: 14px;
+                font-weight: 600;
+                outline: none;
+                width: 170px;
+                border: none;
+                border-bottom: 1px solid #bbc1c8;
+            }
+            select {
+                color: #011C40;
+                margin-top: 10px;
+                border: none;
+                border-bottom: 1px solid #bbc1c8;
+                outline: none;
+                cursor: pointer;
+                width: 170px;
+                float: right;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    #updateBtn {
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 7px 30px;
+        border: 2px solid #F25430;
+        color: #F25430;
+        background-color: transparent;
+        user-select: none;
+        cursor: pointer;
+        float: right;
+        &:hover {
+            color: white;
+            background-color: #F25430;
+        }
+    }
+}

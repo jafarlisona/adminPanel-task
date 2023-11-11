@@ -1,0 +1,93 @@
+.adminHeader{
+    width: 100%;
+    h1{
+        color: #011C40;
+        font-weight: 600;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 15px;
+        margin-right: 50px;
+    }
+    .back {
+        margin-top: 22px ;
+        margin-left: 50px;
+        border: none;
+        background-color: transparent;
+        float: left;
+        i {
+            color: #011C40;
+            font-size: 36px;
+        }
+    }
+}
+table {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    overflow: hidden;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+    .tableHeading {
+        background-color: #56738C;
+        height: 70px;
+
+        th {
+            text-align: center;
+            color: white;
+
+            .add {
+                color: white;
+                font-size: 40px;
+                background-color: transparent;
+                border: none;
+                user-select: none;
+                cursor: pointer;
+                &:hover {
+                color: #011C40;
+                }
+            }
+        }
+    }
+
+    .tableUsers {
+        td {
+            padding: 10px 15px;
+            text-align: center;
+            font-weight: 700;
+            color: #011C40;
+            border-top: 1px solid #56738C;
+        }
+
+        .adminId {
+            color: #F25430;
+        }
+
+        .adminImg {
+            img {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .adminDetail {
+            button {
+                border: none;
+                border-radius: 10px;
+                font-weight: 700;
+                padding: 10px 40px;
+                border: 2px solid #F25430;
+                color: #F25430;
+                background-color: transparent;
+                user-select: none;
+                cursor: pointer;
+                &:hover {
+                    color: white;
+                    background-color: #F25430;
+                }
+            }
+        }
+    }
+}
